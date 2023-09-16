@@ -13,8 +13,8 @@ const Navbar = () => {
                  <Link>
                     <Link className={styles.menuListItem}>Home</Link>
                     <Link className={styles.menuListItem}>Sobre mi</Link>
+                    <Link className={styles.menuListItem}>Habilidades</Link>
                     <Link className={styles.menuListItem}>Portfolio</Link>
-                    <Link className={styles.menuListItem}>Contacto</Link>
                  </Link>
             </div>
             <div className={styles.menuBtn}>
