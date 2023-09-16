@@ -10,4 +10,5 @@ body{
     color: #EB8DB5;
     overflow: hidden;
     overflow-y: scroll;
+    width: 100%;
 }
