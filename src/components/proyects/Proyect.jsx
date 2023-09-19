@@ -10,7 +10,7 @@ const Proyect = () => {
             title: 'Portfolio',
             description:'Pagina web personal',
             img:'https://res.cloudinary.com/am-creaciones/image/upload/v1695086681/Mis-proyectos/portfolioWeb_zxkyhh.png',
-            github:'https://github.com/andimenendez/AM-FRONT-PF.git',
+            github:'https://github.com/andimenendez/my-portfolio.git',
             netlify:'https://am-creaciones.netlify.app/',
         },
         {
@@ -67,8 +67,8 @@ const Proyect = () => {
 
   return (
 
-    <section className={styles.section}>
-        <h1 className={styles.h1}>MIS PROYECTOS</h1>
+    <section className={styles.section} id='projects'>
+        <h1 className={styles.h1}>PROYECTOS</h1>
         <div className={styles.container}>
          {projects.map((projects,index)=> 
             <figure key={index} className={styles.figure}>

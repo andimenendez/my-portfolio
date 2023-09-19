@@ -55,4 +55,8 @@
 @media screen and (max-width:470px) {
     .item {
         width: 100%;
-    }}
+    }
+    .title{
+        font-size: 40px;
+    }
+}

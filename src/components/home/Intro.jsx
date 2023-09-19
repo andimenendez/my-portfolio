@@ -5,7 +5,7 @@ import cv from "../../assets/curriculum.png";
 
 const Intro = () => {
   return (
-    <section className={styles.intro}>
+    <section className={styles.intro} id="intro">
       <div className={styles.introContent}>
         <span className={styles.greet}> Hola,</span>
         <span className={styles.text}>
