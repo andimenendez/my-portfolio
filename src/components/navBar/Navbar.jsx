@@ -10,12 +10,12 @@ const Navbar = () => {
         <nav className={styles.navbar}>
             <img src={logo} alt="logo" className={styles.logo}/>
             <div className="desktopMenu">
-                 <Link>
-                    <Link className={styles.menuListItem}>Home</Link>
-                    <Link className={styles.menuListItem}>Sobre mi</Link>
-                    <Link className={styles.menuListItem}>Habilidades</Link>
-                    <Link className={styles.menuListItem}>Portfolio</Link>
-                 </Link>
+                 <ul>
+                    <a className={styles.menuListItem}>Home</a>
+                    <a className={styles.menuListItem}>Sobre mi</a>
+                    <a className={styles.menuListItem}>Habilidades</a>
+                    <a className={styles.menuListItem}>Portfolio</a>
+                 </ul>
             </div>
             <div className={styles.menuBtn}>
                 <img src={contacto} alt="logo de gmail" className={styles.gmail} /> Contactame

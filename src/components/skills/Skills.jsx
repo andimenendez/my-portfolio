@@ -13,55 +13,60 @@ import { DiBootstrap } from 'react-icons/di';
 
 
 const Skills = () => {
+    const skils = [
+        {
+            tecnologia: 'HTML',
+            icono: <DiHtml5 className={styles.skillIcon}/>
+        },
+        {
+            tecnologia: 'CSS',
+            icono: <DiCss3 className={styles.skillIcon}/>
+        },
+        {
+            tecnologia: 'JAVASCRIPT',
+            icono: <DiJavascript1 className={styles.skillIcon}/>
+        },
+        {
+            tecnologia: 'BOOTSTRAP',
+            icono: <DiBootstrap className={styles.skillIcon}/>
+        }, {
+            tecnologia: 'REACT',
+            icono: <DiReact className={styles.skillIcon}/>
+        }, 
+        {
+            tecnologia: 'NEXT JS',
+            icono: <TbBrandNextjs className={styles.skillIcon}/>
+        }, 
+        {
+            tecnologia: 'TAILWIND',
+            icono: <TbBrandTailwind className={styles.skillIcon}/>
+        },
+        { 
+            tecnologia:'NODE JS',
+            icono:<DiNodejsSmall className={styles.skillIcon}/>
+        },
+        {
+            tecnologia: 'MONGO DB',
+            icono: <DiMongodb className={styles.skillIcon}/>
+        }, 
+        {
+            tecnologia: 'EXPRESS',
+            icono: <SiExpress className={styles.skillIcon}/>
+        }];
     return (
-        <>
+
             <section className={styles.skillsSection}>
-                <h1 className={styles.title}>Habilidades</h1>
+                <h1 className={styles.title}>HABILIDADES</h1>
                 <div className={styles.skill}>
-                    <div className={styles.item}>
-                        <DiHtml5 className={styles.skillIcon}/>
-                        <p> HTML </p>
+                {skils.map((skil,index)=>
+                    <div className={styles.item} key={index}>
+                    {skil.tecnologia}
+                    <p className={styles.skillIcon}>{skil.icono}</p>
                     </div>
-                    <div className={styles.item}>
-                        <DiCss3 className={styles.skillIcon}/>
-                        <p>CSS</p>
-                    </div>
-                    <div className={styles.item}>
-                        <DiJavascript1 className={styles.skillIcon}/>
-                        <p>JAVASCRIPT</p>
-                    </div>
-                    <div className={styles.item}>
-                        <DiBootstrap className={styles.skillIcon}/>
-                        <p> BOOTSTRAP </p>
-                    </div>
-                    <div className={styles.item}>
-                        <DiReact className={styles.skillIcon}/>
-                        <p>REACT</p>
-                    </div>
-                    <div className={styles.item}>
-                        <TbBrandNextjs className={styles.skillIcon}/>
-                        <p>NEXT JS</p>
-                    </div>
-                    <div className={styles.item}>
-                        <TbBrandTailwind className={styles.skillIcon}/>
-                        <p>TAILWIND</p>
-                    </div>
-                    <div className={styles.item}>
-                        <DiNodejsSmall className={styles.skillIcon}/>
-                        <p>NODE JS</p> 
-                    </div>
-                    <div className={styles.item}>
-                        <DiMongodb className={styles.skillIcon}/>
-                        <p>mongoDB</p>
-                    </div>
-                    <div className={styles.item}>
-                        <SiExpress className={styles.skillIcon}/>
-                        <p>EXPRESS</p>
-                    </div>
-                    
+                )}
                 </div>
             </section>
-        </>
+
     )
 }
 

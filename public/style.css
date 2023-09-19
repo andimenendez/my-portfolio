@@ -4,6 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     background-color: transparent;
+    list-style: none;
+    text-decoration: none;
 }
 body{
     background-color: rgb(30,30,30);

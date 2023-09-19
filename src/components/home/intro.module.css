@@ -1,28 +1,18 @@
-.intro{
-    height: calc(100vh - 4rem);
+.intro {
     width: 100vw;
-    max-width: 80rem;
+    height: 100vh;
+    max-width: 85%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
+
 }
 
-.imagen{
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    object-fit: cover;
-    height: 100vh;
-    padding: 1rem;
-    margin-left: 10em;
-}
-
-.introContent{
-    height: 100vh;
+.introContent {
     width: 100vw;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 3rem;
     font-weight: 700;
     display: flex;
@@ -31,50 +21,84 @@
     color: #ffffff;
 }
 
-.greet{
+.imagen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+    margin-left: 10em;
+}
+
+.greet {
     font-size: 1.75rem;
     font-weight: 100;
 }
 
-.name{
+.name {
     color: #EB8DB5
 }
 
-.paragraph{
+.paragraph {
     font-weight: 100;
     font-size: 1.25rem;
     letter-spacing: 1px;
-    width: 50%;
+    width: 60%;
+    margin-bottom: 0.5em;
 }
 
-.btn{
-background-color: #EB8DB5;
-margin: 1rem 0;
-padding: 0.75rem 1.5rem;
-border: none;
-border-radius: 2rem;
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EB8DB5;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    width: 20%;
 }
 
-.btnImg{
+.btnImg {
     object-fit: cover;
     margin: 0 0.25rem;
     height: 1rem;
 }
 
-@media screen and (max-width:840px) {
-    .imagen{
-        right: -100px;
-   }
-    .introContent{
-        font-size: 2.5rem;
-        background-color: #2d2a2a68;
-        width: 100vw;
+@media screen and (max-width:860px) {
+    .intro{
+        max-width: 100%;
     }
-    .paragraph{
+    .imagen {
+        right: -100px;
+        margin-top: 1em;
+    }
+
+    .introContent {
+        font-size: 2rem;
+        padding: 0.5em;
+        width: 100vw;
+        background-color: #2d2a2a68;
+        max-width: 100%;
+        padding-top:5em;
+    }
+
+    .paragraph {
         color: #ffffff;
         width: 100%;
     }
-    .greet{
+
+    .greet {
         font-size: 1.5rem;
+    }
+
+    .btn {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .btn {
+        width: 100%;
     }
 }
