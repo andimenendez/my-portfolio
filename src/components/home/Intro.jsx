@@ -2,8 +2,7 @@ import React from "react";
 import styles from "./intro.module.css";
 import imagen from "../../assets/Andrea2.png";
 import cv from "../../assets/curriculum.png";
-import curriculum from '../../assets/cvAndrea.pdf';
-import Swal from 'sweetalert2'
+import curriculum from '../../assets/andreaMenendez.pdf';
 
 const Intro = () => {
   return (
