@@ -16,7 +16,7 @@ const Intro = () => {
           Soy de Argentina, provincia de Tucuman. <br />
           Soy emprendedora y estudiante, actualmente me encuentro cursando la
           carrera de programador universitario en la facultad de Ciencias
-          Exactas - UNT. <br /> Soy una apacionada por la tecnologia, me encanta
+          Exactas - UNT. <br /> Soy una apasionada por la tecnologia, me encanta
           aprender algo nuevo todos los dias y poder brindar soluciones.{" "}
         </p>
 

@@ -98,7 +98,12 @@
 }
 
 @media screen and (max-width:470px) {
+    .introContent{
+        padding-top: 1.5em;
+    }
+
     .btn {
         width: 100%;
     }
+    
 }

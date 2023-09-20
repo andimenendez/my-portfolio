@@ -40,28 +40,13 @@ const Proyect = () => {
             img:img,
             github:'https://github.com/andimenendez/AM-FRONT-PF.git',
             netlify:'https://am-creaciones.netlify.app/',
-        },       
-         {
+        },{
             title: 'E-commerce',
             description:'Proyecto final, grupal del curso de Rolling Code, se trata de un sitio web para un emprendimiento',
             img:img,
             github:'https://github.com/andimenendez/AM-FRONT-PF.git',
             netlify:'https://am-creaciones.netlify.app/',
-        },       
-        {
-           title: 'E-commerce',
-           description:'Proyecto final, grupal del curso de Rolling Code, se trata de un sitio web para un emprendimiento',
-           img:img,
-           github:'https://github.com/andimenendez/AM-FRONT-PF.git',
-           netlify:'https://am-creaciones.netlify.app/',
-       },       
-       {
-          title: 'E-commerce',
-          description:'Proyecto final, grupal del curso de Rolling Code, se trata de un sitio web para un emprendimiento',
-          img:img,
-          github:'https://github.com/andimenendez/AM-FRONT-PF.git',
-          netlify:'https://am-creaciones.netlify.app/',
-      }
+        },
         
     ]
 
@@ -77,9 +62,13 @@ const Proyect = () => {
                     <h3 className={styles.title}>{projects.title}</h3>
                     <div className={styles.paragraph}>
                     <p> {projects.description}</p>
-                    <li>
+                    <li className={styles.desktopIcons}>
                         <a href={projects.github} target="_blank"><BiLogoGithub/></a>
                         <a href={projects.netlify} target="_blank"><TbWorldCode/></a>
+                    </li>
+                    <li className={styles.mobIcons}>
+                        <a href={projects.github} target="_blank" className={styles.mobLink}><BiLogoGithub/> Codigo</a>
+                        <a href={projects.netlify} target="_blank" className={styles.mobLink}><TbWorldCode/> Demo</a>
                     </li>
                     </div>
 
