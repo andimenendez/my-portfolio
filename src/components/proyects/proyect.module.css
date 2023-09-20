@@ -101,14 +101,16 @@
     max-width: 220px;
     margin: auto;
 }
+
 .figure:hover>.capa>.paragraph>.mobIcons {
     display: none;
 }
 
 @media screen and (max-width:860px) {
-    .figure{
+    .figure {
         width: 50%;
     }
+
     .figure:hover>.capa>.paragraph>.desktopIcons {
         display: none;
     }
@@ -144,7 +146,7 @@
 }
 
 @media screen and (max-width:420px) {
-    .figure{
+    .figure {
         width: 100%;
     }
 }

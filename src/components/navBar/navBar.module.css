@@ -1,33 +1,35 @@
-.navbar{
+.navbar {
     height: 5rem;
     width: 100vw;
     margin: 0 auto;
-    padding:  1rem 2rem;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position:sticky;
+    position: sticky;
     top: 0;
     z-index: 3;
     background-color: #0802029e;
 }
 
-.logo{
+.logo {
     object-fit: cover;
     height: 3rem;
     width: 4rem;
 }
 
-.menuListItem{
-    margin:1rem;
+.menuListItem {
+    margin: 1rem;
     cursor: pointer;
 }
-.menuListItem:hover{
+
+.menuListItem:hover {
     color: #ABD1E7;
     padding-bottom: 0.5rem;
     border-bottom: 3PX solid #ABD1E7;
 }
-.menuBtn{
+
+.menuBtn {
     background-color: #ffffff;
     color: #000000;
     border: none;
@@ -37,19 +39,21 @@
     padding: 0 1rem;
     border-radius: 2rem;
 }
-.gmail{
+
+.gmail {
     object-fit: cover;
     height: 1rem;
     width: 1rem;
     margin: 1rem;
 }
-.iconMenu{
+
+.iconMenu {
     display: none;
     object-fit: cover;
     font-size: 2.3rem;
 }
 
-.navMenu{
+.navMenu {
     position: absolute;
     top: 4rem;
     right: 2rem;
@@ -59,25 +63,28 @@
     padding: 0.5rem;
     height: fit-content;
     min-width: 15rem;
-    background: rgb(40,40,40);
+    background: rgb(40, 40, 40);
     border-radius: 1rem;
 
 }
-.listItem{
+
+.listItem {
     color: white;
     padding: 0.5rem 3rem;
     margin: 0.25rem;
-    background: rgb(30,30,30);
+    background: rgb(30, 30, 30);
 }
 
 @media screen and (max-width:720px) {
-    .iconMenu{
+    .iconMenu {
         display: flex;
     }
-    .desktopMenu{
+
+    .desktopMenu {
         display: none;
     }
-    .menuBtn{
+
+    .menuBtn {
         display: none;
     }
 

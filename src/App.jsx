@@ -1,4 +1,3 @@
-import './App.css';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Intro from './components/home/Intro'

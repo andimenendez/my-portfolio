@@ -1,26 +1,37 @@
 import React, { useRef } from 'react';
 import styles from './contact.module.css';
-import ig from '../../assets/001-instagram.png';
 import fb from '../../assets/002-facebook.png';
-// import wsp from '../../assets/003-whatsaap.png';
+import wsp from '../../assets/whatsapp.png'
 import gitHub from '../../assets/github.png';
 import ln from '../../assets/linkedin.png';
-import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_ilv9ii4', 'template_1o1nx3i', form.current, '986EMhr0qbkq5Yj-H')
+    emailjs.sendForm('service_ilv9ii4', 'template_1o1nx3i', form.current, '986EMhr0qbkq5Yj-h')
       .then((result) => {
-        alert('email Enviado');
-        
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'El mensaje fue enviado',
+          showConfirmButton: false,
+          timer: 3500
+        })
+
       }, (error) => {
         console.log(error.text);
-        alert('error al enviar mensaje')
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Algo salio mal al anviar el mail',
+          footer: '<a href="http://wa.me/+543814725808" target="_blank"> prueba contactactandote a mi whatsapp </a>'
+        })
       });
-      form.current.reset()
+    form.current.reset()
   };
 
   return (
@@ -29,14 +40,14 @@ const Contact = () => {
         <h1 className={styles.title}>CONTACTO</h1>
         <span className={styles.description}>Por favor complete el siguiente formulario para discutir cualquier oportunidad de trabajo</span>
         <form ref={form} onSubmit={sendEmail} className={styles.contactForm}>
-          <input type="text" className={styles.name} placeholder='Tu Nombre' name='from_name' />
-          <input type="email" className={styles.email} placeholder='Tu Email' name='from_email' />
-          <textarea name="message" rows="5" placeholder='Tu mensaje' className={styles.message}></textarea>
+          <input type="text" className={styles.name} placeholder='Tu Nombre' name='from_name' required />
+          <input type="email" className={styles.email} placeholder='Tu Email' name='from_email' required />
+          <textarea name="message" rows="5" placeholder='Tu mensaje' className={styles.message} required></textarea>
           <button type='submit' className={styles.btn} value='enviar'>enviar</button>
           <div className={styles.links}>
             <a href="https://www.facebook.com/andreaveronicamenendez1" target='_blank'><img src={fb} alt="facebook" className={styles.icon} /></a>
-            <a href="https://www.instagram.com/andi.menendez/" target='_blank'>
-              <img src={ig} alt="instagram" className={styles.icon} />
+            <a href="http://wa.me/+543814725808" target='_blank'>
+              <img src={wsp} alt="whatsapp" className={styles.icon} />
             </a>
             <a href="https://github.com/andimenendez" target='_blank'> <img src={gitHub} alt="github" className={styles.icon} /></a>
             {/* <img src={wsp} alt="" /> */}

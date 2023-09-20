@@ -16,56 +16,56 @@ const Skills = () => {
     const skils = [
         {
             tecnologia: 'HTML',
-            icono: <DiHtml5 className={styles.skillIcon}/>
+            icono: <DiHtml5 className={styles.skillIcon} />
         },
         {
             tecnologia: 'CSS',
-            icono: <DiCss3 className={styles.skillIcon}/>
+            icono: <DiCss3 className={styles.skillIcon} />
         },
         {
             tecnologia: 'JAVASCRIPT',
-            icono: <DiJavascript1 className={styles.skillIcon}/>
+            icono: <DiJavascript1 className={styles.skillIcon} />
         },
         {
             tecnologia: 'BOOTSTRAP',
-            icono: <DiBootstrap className={styles.skillIcon}/>
+            icono: <DiBootstrap className={styles.skillIcon} />
         }, {
             tecnologia: 'REACT',
-            icono: <DiReact className={styles.skillIcon}/>
-        }, 
+            icono: <DiReact className={styles.skillIcon} />
+        },
         {
             tecnologia: 'NEXT JS',
-            icono: <TbBrandNextjs className={styles.skillIcon}/>
-        }, 
+            icono: <TbBrandNextjs className={styles.skillIcon} />
+        },
         {
             tecnologia: 'TAILWIND',
-            icono: <TbBrandTailwind className={styles.skillIcon}/>
+            icono: <TbBrandTailwind className={styles.skillIcon} />
         },
-        { 
-            tecnologia:'NODE JS',
-            icono:<DiNodejsSmall className={styles.skillIcon}/>
+        {
+            tecnologia: 'NODE JS',
+            icono: <DiNodejsSmall className={styles.skillIcon} />
         },
         {
             tecnologia: 'MONGO DB',
-            icono: <DiMongodb className={styles.skillIcon}/>
-        }, 
+            icono: <DiMongodb className={styles.skillIcon} />
+        },
         {
             tecnologia: 'EXPRESS',
-            icono: <SiExpress className={styles.skillIcon}/>
+            icono: <SiExpress className={styles.skillIcon} />
         }];
     return (
 
-            <section className={styles.skillsSection} id='skills'>
-                <h1 className={styles.title}>HABILIDADES</h1>
-                <div className={styles.skill}>
-                {skils.map((skil,index)=>
+        <section className={styles.skillsSection} id='skills'>
+            <h1 className={styles.title}>HABILIDADES</h1>
+            <div className={styles.skill}>
+                {skils.map((skil, index) =>
                     <div className={styles.item} key={index}>
-                    {skil.tecnologia}
-                    <p className={styles.skillIcon}>{skil.icono}</p>
+                        {skil.tecnologia}
+                        <p className={styles.skillIcon}>{skil.icono}</p>
                     </div>
                 )}
-                </div>
-            </section>
+            </div>
+        </section>
 
     )
 }

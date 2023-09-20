@@ -3,6 +3,7 @@ import styles from "./intro.module.css";
 import imagen from "../../assets/Andrea2.png";
 import cv from "../../assets/curriculum.png";
 import curriculum from '../../assets/cvAndrea.pdf';
+import Swal from 'sweetalert2'
 
 const Intro = () => {
   return (
@@ -21,10 +22,10 @@ const Intro = () => {
           aprender algo nuevo todos los dias y poder brindar soluciones.{" "}
         </p>
 
-        <a href={curriculum} download="curriculum-AndreaMenendez" className={styles.btnLink}>  
-         <button className={styles.btn}>
+        <a href={curriculum} target="_blank" download="curriculum-AndreaMenendez" className={styles.btnLink}>
+          <button className={styles.btn}>
             <img src={cv} alt="Logo de cv" className={styles.btnImg} /> MI CV
-         </button>
+          </button>
         </a>
       </div>
       <img

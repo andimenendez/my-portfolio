@@ -3,7 +3,7 @@ import styles from './footer.module.css'
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-        Andrea Verónica Menéndez - 2024
+      Andrea Verónica Menéndez - 2024
     </footer>
   )
 }
