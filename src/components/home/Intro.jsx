@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./intro.module.css";
 import imagen from "../../assets/Andrea2.png";
 import cv from "../../assets/curriculum.png";
+import curriculum from '../../assets/cvAndrea.pdf';
 
 const Intro = () => {
   return (
@@ -20,9 +21,11 @@ const Intro = () => {
           aprender algo nuevo todos los dias y poder brindar soluciones.{" "}
         </p>
 
-        <button className={styles.btn}>
-          <img src={cv} alt="Logo de cv" className={styles.btnImg} /> MI CV
-        </button>
+        <a href={curriculum} download="curriculum-AndreaMenendez" className={styles.btnLink}>  
+         <button className={styles.btn}>
+            <img src={cv} alt="Logo de cv" className={styles.btnImg} /> MI CV
+         </button>
+        </a>
       </div>
       <img
         src={imagen}
