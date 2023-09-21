@@ -20,7 +20,7 @@ https://andreamenendez.netlify.app/
 
 
 
-## Tech Stack (<>)
+## Tecnologias usadas (<>)
 
  React, CSS
 
