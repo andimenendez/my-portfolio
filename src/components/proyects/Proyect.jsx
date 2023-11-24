@@ -7,47 +7,34 @@ const Proyect = () => {
 
     const projects = [
         {
+            title: 'Mundo oculto de Sabrina',
+            description: 'pagina web creada con html y css como trabajo para la facultad',
+            img: 'https://res.cloudinary.com/am-creaciones/image/upload/v1695086681/Mis-proyectos/portfolioWeb_zxkyhh.png',
+            github: 'https://github.com/andimenendez/Sabrina-web',
+            netlify: 'https://mundoocultodesabrina.netlify.app/',
+        },
+        {
             title: 'Portfolio',
-            description: 'Pagina web personal',
+            description: 'Pagina web personal, creada con react',
             img: 'https://res.cloudinary.com/am-creaciones/image/upload/v1695086681/Mis-proyectos/portfolioWeb_zxkyhh.png',
             github: 'https://github.com/andimenendez/my-portfolio.git',
             netlify: 'https://am-creaciones.netlify.app/',
         },
         {
             title: 'E-commerce',
-            description: 'Proyecto final, grupal del curso de Rolling Code, se trata de un sitio web para un emprendimiento',
+            description: 'Proyecto final grupal, del curso de Rolling Code, se trata de un sitio web para un emprendimiento creada con react, node js',
             img: 'https://res.cloudinary.com/am-creaciones/image/upload/v1695086817/Mis-proyectos/proyectofinalRolling_dkoykh.png',
             github: 'https://github.com/andimenendez/AM-FRONT-PF.git',
             netlify: 'https://am-creaciones.netlify.app/',
         },
         {
-            title: 'E-commerce',
-            description: 'Proyecto final, grupal del curso de Rolling Code, se trata de un sitio web para un emprendimiento',
+            title: 'Proximo',
+            description: 'Trabajando en un nuevo proyecto',
             img: img,
-            github: 'https://github.com/andimenendez/AM-FRONT-PF.git',
-            netlify: 'https://am-creaciones.netlify.app/',
+            github: '',
+            netlify: '',
         },
-        {
-            title: 'E-commerce',
-            description: 'Proyecto final, grupal del curso de Rolling Code, se trata de un sitio web para un emprendimiento',
-            img: img,
-            github: 'https://github.com/andimenendez/AM-FRONT-PF.git',
-            netlify: 'https://am-creaciones.netlify.app/',
-        },
-        {
-            title: 'E-commerce',
-            description: 'Proyecto final, grupal del curso de Rolling Code, se trata de un sitio web para un emprendimiento',
-            img: img,
-            github: 'https://github.com/andimenendez/AM-FRONT-PF.git',
-            netlify: 'https://am-creaciones.netlify.app/',
-        }, {
-            title: 'E-commerce',
-            description: 'Proyecto final, grupal del curso de Rolling Code, se trata de un sitio web para un emprendimiento',
-            img: img,
-            github: 'https://github.com/andimenendez/AM-FRONT-PF.git',
-            netlify: 'https://am-creaciones.netlify.app/',
-        },
-
+ 
     ]
 
     return (
