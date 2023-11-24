@@ -9,7 +9,7 @@ const Proyect = () => {
         {
             title: 'Mundo oculto de Sabrina',
             description: 'pagina web creada con html y css como trabajo para la facultad',
-            img: 'https://res.cloudinary.com/am-creaciones/image/upload/v1695086681/Mis-proyectos/portfolioWeb_zxkyhh.png',
+            img: 'https://res.cloudinary.com/am-creaciones/image/upload/v1700836186/Mis-proyectos/Captura_de_pantalla_2023-11-24_112348_dwg2j2.png',
             github: 'https://github.com/andimenendez/Sabrina-web',
             netlify: 'https://mundoocultodesabrina.netlify.app/',
         },
@@ -27,14 +27,6 @@ const Proyect = () => {
             github: 'https://github.com/andimenendez/AM-FRONT-PF.git',
             netlify: 'https://am-creaciones.netlify.app/',
         },
-        {
-            title: 'Proximo',
-            description: 'Trabajando en un nuevo proyecto',
-            img: img,
-            github: '',
-            netlify: '',
-        },
- 
     ]
 
     return (
