@@ -1,8 +1,37 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Portfolio 💻📱
 
-Currently, two official plugins are available:
+Este repositorio encontraras el codigo de mi portfolio web, donde tengo una presentacion sobre mi, los conocimientos que adquiri en los cursos realizados y tambien los proyectos que realice. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalacion ⚙
+ 
+Este proyecto esta realizado con React y la instacion de este es con npm 
+
+```bash
+  cd myPortfolio
+  npm install 
+  npm run dev
+```
+    
+## Sitio web 🖥
+
+https://andreamenendez.netlify.app/
+
+
+
+
+## Tecnologias usadas (<>)
+
+ React, CSS
+
+
+
+## Autora 👩🏼‍💻 
+
+- [Andrea Verónica Menéndez](https://github.com/andimenendez)
+
+
+## contacto
+
+andreaveronicam96@gmail.com
+
